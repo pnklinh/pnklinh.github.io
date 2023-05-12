@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a9adda269f.js" crossorigin="anonymous"></script>
+</head>
+<style>
+body {
+  background-color:hsla(290,60%,70%,0.3);
+  margin-left: 270px;
+  margin-right: 30px;
+  margin: fixed;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: georgia;
+  font-size: 45px;
+}
+h2 {
+  font-family: baskerville;
+  font-size: 35px;
+}
+
+p {
+  font-size: 23px;
+  line-height: 1.0;
+}
+li {
+  font-size: 23px;
+}
+button {
+  font-size: 20px;
+  font-family: garamond;
+  border-radius: 12px;
+}
+footer {
+  font-size: 30px;
+  font-family: monospace;
+  font-variant: small-caps slashed-zero;
+  text-align: center;
+}
+.skillssize {
+  font-size: 22px;
+}
+.contentlist {
+  height: 100%;
+  width: 250px;
+  top: 0;
+  left: 0;
+  float: left;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+.contentlist button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 19px;
+  font-family: monospace;
+}
+.contentlist button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.content {
+  font-family: baskerville;
+}
+
+
+
+</style>
+<body>
+<div class="contentlist">
+<button onclick="DisplayAboutMe()">About me</button> <br>
+<button onclick="DisplayInterests()">Interests</button> <br>
+<button onclick="DisplayAcademicBackground()">Academic background</button> <br>
+<button onclick="DisplayExtracurriculars()">Extracurriculars</button> <br>
+<button onclick="DisplaySkills()">Skills</button> <br>
+<button onclick="DisplayContactMe()">Contact me</button> <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+<p><b>pnklinh</b>   |
+<a href="" onclick="DisplayAboutme()"><i class="fa-solid fa-circle-user fa-lg"></i></a>
+</p>
+</footer>
+</div> 
+
+<div class="content">
+<h1>Introduction</h1>
+<div id="about">
+  <h2>About me</h2>
+<p>
+Hello! I'm <b>Linh</b> (Pham Ngoc Khanh Linh), a current student majoring in <em>English</em> at <u>High School for the Gifted, VNU-HCM</u>. I discovered my natural ability for learning foreign languages (especially English) at a young age and that has led me to the present! <br>
+Despite English and languages in general being one of my greatest strengths, I believe that they serves as a great communication tool to facilitate my research and understanding of other subjects. Therefore, I am also curious about many other global issues and aspects such as politics, economics, history and psychology! <br>
+Here are some pictures of me: <br>
+<br>
+<img src="IMG_6513.jpeg" width="250" height="320" />
+<img src="315953945_141406978665411_4777249960308088911_n.jpg" width="300" height="320" />
+</p>
+<div id="button1">
+<button onclick="DisplayInterests()">Next</button>
+</div>
+</div>
+
+<div id="interests">
+  <h2>Interests</h2>
+<p>
+Here is a small list of my interests:
+<ul>
+<li>Latin-originated languages: <br> As i have mentioned in the <a href="" onclick="DisplayAboutme()">About me</a> section, I have a flair for learning languages (Vietnamese, English, French and some rusty Spanish). Having majored in English, I have attended many sessions involving the study of English composition, morphology and etymology. Therefore, I would love to further explore my ability in this field, learning about how different languages and cultures shape the world as it is today. </li>
+<li>Behavioral economics: Although I am still inexperienced in this field, I would love to delve into the psychological science behind economic spending and decision-making. I believe that further research in how individuals and businesses divide their funds would greatly benefit the community and I aspire to pursue economics as an undergraduate major.</li>
+<li>Political science: I am especially intrigued by the well-rounded and critical view acquired through political understanding. While gaining experience in politics with my extracurriculars, I learned to tackle controversial issues around the globe with multi-faceted perspectives as well as brainstorming novel resolutions. I believe politics play a crucial role in shaping global diplomacy and legislation-making, and I would like to involve it in my future studies.</li>
+<li>Programming: <br> I didn't understand coding and its profound importance at first, and I was pretty bad at the subject. However, ever since I found out how codes can be implemented into solving daily life problems and improve your logic, I have been very excited in learning new programming skills and algorithms to incorporate them into studying trends and fluctuations in social sciences in general and economics in specific. </li>
+</ul>
+</p>
+<div id="buttons2">
+<button onclick="DisplayAboutMe()">Previous</button>
+<button onclick="DisplayAcademicBackground()">Next</button>
+</div>
+</div>
+
+<div id="academic-background">
+<h2>Academic background</h2>
+<p>
+<a href="https://ptnk.edu.vn">High School for the Gifted, VNU-HCM</a> <br>
+English class of 2025 <br>
+<ul>
+<li>Member of English class (Honors) 2023 </li> <br>
+<li>#9 highest score in HSG entrance exam 2022</li> <br>
+<li>#12 (Second Prize) in Ho Chi Minh City English Competition 2021-2022 </li> <br>
+</ul>
+</p>
+<div id="buttons3">
+<button onclick="DisplayInterests()">Previous</button>
+<button onclick="DisplayExtracurriculars()">Next</button>
+</div>
+</div>
+
+<div id="extracurriculars">
+  <h2>Extracurriculars</h2>
+<p> 
+<ol>
+<li> Model United Nations:</li> <br>
+<ul>
+<li>Program Member at <a href="https://www.facebook.com/NKOMUN2021">NKOMUN</a> <br>
+<li> Organiser of Workshop: Liberation (NKOMUN)</li>
+<li>Outstanding Delegate at NKOMUN'22 conference - UN WOMEN </li>
+<li>Have participated in a variety of MUN conferences in HCM City (YASMUN, SIMUN, NKOMUN and TOMUN) and committees such as DISEC, UN Women, UNOOSA, Bilderberg Meeting (Crisis), etc.</li>
+</ul>
+<li> Vice-Head of Program and Event at <a href="https://www.facebook.com/profile.php?id=100092514703574">Francify</a> </li>
+<ul>
+<li>First core team generation of the club</li>
+<li>Spreading the French language and French culture to high school community</li>
+</ul>
+
+</ol>
+</p>
+<div id="buttons4">
+<button onclick="DisplayAcademicBackground()">Previous</button>
+<button onclick="DisplaySkills()">Next</button>
+</div>
+</div>
+
+<div id="skills">
+  <h2>Skills</h2>
+<p>
+<ul>
+<li>Languages:</li> <br>
+<div class="skillssize">
+<i class="fa-solid fa-circle-check"></i>
+Vietnamese <em>(Native language)</em> <br>
+<i class="fa-solid fa-circle-check"></i>
+English <br>
+<i class="fa-solid fa-circle-check"></i>
+French <br>
+<i class="fa-solid fa-circle-check"></i>
+Spanish <br>
+</div>
+<li>Programming languages:</li> <br>
+<i class="fa-brands fa-cuttlefish fa-2xl"></i>
+<i class="fa-brands fa-square-js fa-2xl"></i>
+<i class="fa-brands fa-html5 fa-2xl"></i>
+<i class="fa-brands fa-css3-alt fa-2xl"></i>
+<br>
+<br>
+<li>Debate and Public Speaking</li>
+<li>Argumentative, Persuasive and Analytical Writing</li>
+</ul>
+<div id="buttons5">
+<button onclick="DisplayExtracurriculars()">Previous</button>
+<button onclick="DisplayContactMe()">Next</button>
+</div>
+</div>
+
+<div id="contact">
+  <h2>Contact me</h2>
+<p>
+<em><b>Linh Pham</b></em> [she/her] <br>
+High School for the Gifted, VNU-HCM <br>
+<i class="fa-solid fa-inbox"></i> <a href="mailto:phamngockhanhlinh007@gmail.com">phamngockhanhlinh007@gmail.com</a> <br>
+<i class="fa-solid fa-phone"></i> <a href="tel:(+84)77-569-3507">077-569-3507</a> <br>
+<i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/profile.php?id=100083883295531">https://www.facebook.com/profile.php?id=100083883295531</a> <br>
+<i class="fa-brands fa-square-instagram fa-lg"></i> <a href="https://www.instagram.com/2imcami/">@2imcami</a>
+</p>
+<p id="demo"></p>
+<button onclick="DisplaySkills()">Previous</button>
+<button onclick="DisplayAboutMe()">Back to top</button>
+
+<script>
+document.getElementById("demo").innerHTML = "<b>Date :<b> " + Date();
+
+document.getElementById("about").style.display = "block";
+document.getElementById("interests").style.display = "none";
+document.getElementById("academic-background").style.display = "none";
+document.getElementById("extracurriculars").style.display = "none";
+document.getElementById("skills").style.display = "none";
+document.getElementById("contact").style.display = "none";
+function DisplayAboutMe() {
+  document.getElementById("about").style.display = "block";
+  document.getElementById("interests").style.display = "none";
+  document.getElementById("academic-background").style.display = "none";
+  document.getElementById("extracurriculars").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("contact").style.display = "none";
+}
+function DisplayInterests() {
+  document.getElementById("about").style.display = "none";
+  document.getElementById("interests").style.display = "block";
+  document.getElementById("academic-background").style.display = "none";
+  document.getElementById("extracurriculars").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("contact").style.display = "none";
+} 
+function DisplayAcademicBackground() {
+  document.getElementById("about").style.display = "none";
+  document.getElementById("interests").style.display = "none";
+  document.getElementById("academic-background").style.display = "block";
+  document.getElementById("extracurriculars").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("contact").style.display = "none";
+}
+function DisplayExtracurriculars() {
+  document.getElementById("about").style.display = "none";
+  document.getElementById("interests").style.display = "none";
+  document.getElementById("academic-background").style.display = "none";
+  document.getElementById("extracurriculars").style.display = "block";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("contact").style.display = "none";
+}
+function DisplaySkills() {
+  document.getElementById("about").style.display = "none";
+  document.getElementById("interests").style.display = "none";
+  document.getElementById("academic-background").style.display = "none";
+  document.getElementById("extracurriculars").style.display = "none";
+  document.getElementById("skills").style.display = "block";
+  document.getElementById("contact").style.display = "none";
+}
+function DisplayContactMe() {
+  document.getElementById("about").style.display = "none";
+  document.getElementById("interests").style.display = "none";
+  document.getElementById("academic-background").style.display = "none";
+  document.getElementById("extracurriculars").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("contact").style.display = "block";
+}
+</script>
+</div>
+</body>
+</div>
