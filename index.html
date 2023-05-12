@@ -75,29 +75,33 @@ footer {
 }
 .tab button.active {
   background-color: #ccc;
+  color: light-purple;
 }
 .content {
   font-family: baskerville;
 }
-
-
-
 </style>
 <body>
 <div class="contentlist">
-<button onclick="DisplayAboutMe()">About me</button> <br>
-<button onclick="DisplayInterests()">Interests</button> <br>
-<button onclick="DisplayAcademicBackground()">Academic background</button> <br>
-<button onclick="DisplayExtracurriculars()">Extracurriculars</button> <br>
-<button onclick="DisplaySkills()">Skills</button> <br>
-<button onclick="DisplayContactMe()">Contact me</button> <br>
+<button id="buttonAboutMe" onclick="DisplayAboutMe()()">About me</button> <br>
+
+<button id="buttonInterests" onclick="DisplayInterests()">Interests</button> <br>
+
+<button id="buttonAcademic" onclick="DisplayAcademicBackground()">Academic background</button> <br>
+
+<button id="buttonExtracurriculars" onclick="DisplayExtracurriculars()">Extracurriculars</button> <br>
+
+<button id="buttonSkills" onclick="DisplaySkills()">Skills</button> <br> 
+
+<button id="buttonContact" onclick="DisplayContactMe()">Contact me</button> <br>
+
 <br>
 <br>
 <br>
 <br>
 <br>
 <footer>
-<p><b>pnklinh</b>   |
+<p><b>pnklinh</b> |
 <a href="" onclick="DisplayAboutme()"><i class="fa-solid fa-circle-user fa-lg"></i></a>
 </p>
 </footer>
@@ -127,7 +131,7 @@ Here is a small list of my interests:
 <ul>
 <li>Latin-originated languages: <br> As i have mentioned in the <a href="" onclick="DisplayAboutme()">About me</a> section, I have a flair for learning languages (Vietnamese, English, French and some rusty Spanish). Having majored in English, I have attended many sessions involving the study of English composition, morphology and etymology. Therefore, I would love to further explore my ability in this field, learning about how different languages and cultures shape the world as it is today. </li>
 <li>Behavioral economics: Although I am still inexperienced in this field, I would love to delve into the psychological science behind economic spending and decision-making. I believe that further research in how individuals and businesses divide their funds would greatly benefit the community and I aspire to pursue economics as an undergraduate major.</li>
-<li>Political science: I am especially intrigued by the well-rounded and critical view acquired through political understanding. While gaining experience in politics with my extracurriculars, I learned to tackle controversial issues around the globe with multi-faceted perspectives as well as brainstorming novel resolutions. I believe politics play a crucial role in shaping global diplomacy and legislation-making, and I hope to involve it in my future studies.</li>
+<li>Political science: I am especially intrigued by the well-rounded and critical view acquired through political understanding. While gaining experience in politics with my extracurriculars, I learned to tackle controversial issues around the globe with multi-faceted perspectives as well as brainstorming novel resolutions. I believe politics play a crucial role in shaping global diplomacy and legislation-making, and I would like to involve it in my future studies.</li>
 <li>Programming: <br> I didn't understand coding and its profound importance at first, and I was pretty bad at the subject. However, ever since I found out how codes can be implemented into solving daily life problems and improve your logic, I have been very excited in learning new programming skills and algorithms to incorporate them into studying trends and fluctuations in social sciences in general and economics in specific. </li>
 </ul>
 </p>
@@ -333,6 +337,8 @@ document.getElementById("buttonExtracurriculars").style.color = "black";
 document.getElementById("buttonSkills").style.color = "black";
 document.getElementById("buttonContact").style.color = "#C3B1E1";
 }
+
+
 </script>
 </div>
 </body>
